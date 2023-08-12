@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'online_shop.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default': { # <-- default - название подключения по умолчанию
+        'ENGINE': 'django.db.backends.sqlite3', # тип базы данных 
+        'NAME': BASE_DIR / 'db.sqlite3', # путь к базе данных
     }
 }
 
